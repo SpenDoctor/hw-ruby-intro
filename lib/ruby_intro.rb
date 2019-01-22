@@ -4,10 +4,13 @@
 
 def sum arr
   # YOUR CODE HERE
+  sum = 0
+  arr.inject(0) {|sum,x| sum + x}
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  arr.max(2).inject(0) {|sum,x|sum + x}
 end
 
 def sum_to_n? arr, n
