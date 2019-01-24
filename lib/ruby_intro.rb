@@ -15,6 +15,11 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  if arr.combination(2).any? {|x,y| x + y == n}
+    return true
+  else
+    return false
+  end
 end
 
 # Part 2
